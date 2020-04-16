@@ -6,7 +6,12 @@ It's really just a Dockerfile right now.
 
 Uses [https://github.com/open-eid/libdigidocpp](libdigidocpp) under the hood, which is maintained by Estonia
 
-Now contains a web server that passes through to the command line. Will update docs...
+Now contains a web server that passes through to the command line. 
+
+NOTE: This is a proof of concept and how the file downloading is handled is not ideal.S
+
+
+Will update docs...
 
 ## Steps to run locally, assuming you have docker set up.
 

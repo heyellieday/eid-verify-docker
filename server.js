@@ -4,12 +4,16 @@ const express = require('express');
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 
+const cors = require('cors')
+
+
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
 // App
 const app = express();
+app.use(cors({credentials: true, origin: true}))
 app.get('/verify', async (req, res) => {
     if (!req.query.url) return res.send("provide a url param");
     console.log(req.query.url);
